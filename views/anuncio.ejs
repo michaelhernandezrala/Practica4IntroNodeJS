@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <ul>
+        <p> 
+            <% if (anuncio.venta === true) { %> 
+            <p>Esta en venta</p>
+            <% } else { %> 
+            <p>No está en venta</p>
+            <% } %></p>
+        <p>Precio: <%= anuncio.precio %></p>
+        <img src="http://localhost:3000/images/anuncios/<%= anuncio.foto %>"alt="Imagen">
+        <p>Tags: <%= anuncio.tags %></p>
+    </ul>
+  </body>
+</html>
